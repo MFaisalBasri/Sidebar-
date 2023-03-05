@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-heart'></i>
+                <div class="logo_name">FTeknik</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+
+        <div class="src">
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <ul class="nav">
+            <li>
+                <a href="">
+                    <i class='bx bx-bar-chart-square'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Statistic</span>
+                </a>
+                <span class="tooltip">Statistic</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-calendar'></i>
+                    <span class="link_name">Plan</span>
+                </a>
+                <span class="tooltip">Plan</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bxs-bolt'></i>
+                    <span class="link_name">Map</span>
+                </a>
+                <span class="tooltip">Map</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="home_content">
+        <div class="text">Home content</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+        let scrBtn = document.querySelector('.bx-search');
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+        scrBtn.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
